@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transaction Details</title>
+
+    <link rel="stylesheet" href="transaction-details.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-title">Matcha POS</div>
+            <div class="logo-subtitle">CASHIER REGISTER SYSTEM</div>
+        </div>
+
+        <nav>
+            <div class="nav-item">◆ &nbsp; Dashboard</div>
+            <div class="nav-item">▤ &nbsp; Point of Sale</div>
+            <div class="nav-item">■ &nbsp; Inventory</div>
+
+            <div class="nav-item">
+                ☷ &nbsp; Transactions
+            </div>
+
+            <div class="nav-item">▲ &nbsp; Reports</div>
+            <div class="nav-item">◈ &nbsp; Product Management</div>
+        </nav>
+
+        <div class="account">
+
+            <div class="account-name">
+                <span class="account-icon">A</span>
+                admin · admin
+            </div>
+
+            <button class="logout-button">
+                Log out
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <h1>Transaction Details</h1>
+
+        <p class="description">
+            View the complete details of a transaction.
+        </p>
+
+
+        <div class="search-section">
+
+            <label for="receiptInput">
+                Receipt #
+            </label>
+
+            <input
+                type="text"
+                id="receiptInput"
+                placeholder="Enter receipt number"
+            >
+
+            <button onclick="searchTransaction()">
+                Search
+            </button>
+
+        </div>
+
+
+        <div class="details-card">
+
+            <div id="transactionDetails">
+
+                <p class="placeholder">
+                    Enter a receipt number to view transaction details.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="transaction-details.js"></script>
+
+</body>
+
+</html>
